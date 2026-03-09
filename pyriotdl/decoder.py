@@ -1,8 +1,8 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
-from pyriotdl.helper import BinaryReader, decompress_zstd, raw_handler
-from pyriotdl.models import Bundle, Chunk, Directory, GameFile, Language, Manifest
+from PyRiotDL.helper import BinaryReader, decompress_zstd, raw_handler
+from PyRiotDL.models import Bundle, Chunk, Directory, GameFile, Language, Manifest
 
 class ManifestDecoder:
     def __init__(self, raw: str | bytes | BinaryReader):

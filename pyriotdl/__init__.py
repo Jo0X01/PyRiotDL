@@ -9,14 +9,14 @@ import os
 from collections import defaultdict
 from typing import Optional
 
-from pyriotdl.builder import ManifestBuilder
-from pyriotdl.config import RiotConfig
-from pyriotdl.decoder import ManifestDecoder
-from pyriotdl.downloader import GameDownloader
-from pyriotdl.game import GameConfig
-from pyriotdl.helper import extract_id, save_manifest_file
-from pyriotdl.history import ManifestVersion, RiotManifestHistory
-from pyriotdl.models import (
+from PyRiotDL.builder import ManifestBuilder
+from PyRiotDL.config import RiotConfig
+from PyRiotDL.decoder import ManifestDecoder
+from PyRiotDL.downloader import GameDownloader
+from PyRiotDL.game import GameConfig
+from PyRiotDL.helper import extract_id, save_manifest_file
+from PyRiotDL.history import ManifestVersion, RiotManifestHistory
+from PyRiotDL.models import (
     DiffResult,
     DownloadStatus,
     FilePlan,
@@ -24,7 +24,7 @@ from pyriotdl.models import (
     PlanChunk,
     UpdateStatus,
 )
-from pyriotdl.progress import BarStyle, DownloadProgress
+from PyRiotDL.progress import BarStyle, DownloadProgress
 
 log = logging.getLogger(__name__)
 
@@ -85,7 +85,7 @@ class PyRiotDL:
     @staticmethod
     def setup_logging(level: int = logging.INFO) -> None:
         """
-        Configure a basic ``StreamHandler`` for the ``pyriotdl`` logger hierarchy.
+        Configure a basic ``StreamHandler`` for the ``PyRiotDL`` logger hierarchy.
 
         Call this once at application startup if you want log output.
 

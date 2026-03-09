@@ -1,5 +1,5 @@
 from typing import Optional
-from pyriotdl.game import GameConfig
+from PyRiotDL.game import GameConfig
 
 class RiotConfig:
     """

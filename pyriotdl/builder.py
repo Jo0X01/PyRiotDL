@@ -5,9 +5,9 @@ import json
 import logging
 from typing import Optional
 
-from pyriotdl.decoder import GameFile, ManifestDecoder
-from pyriotdl.helper import fmt_size
-from pyriotdl.models import FilePlan, PlanChunk
+from PyRiotDL.decoder import GameFile, ManifestDecoder
+from PyRiotDL.helper import fmt_size
+from PyRiotDL.models import FilePlan, PlanChunk
 
 log = logging.getLogger(__name__)
 

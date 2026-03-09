@@ -20,8 +20,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
 
-from pyriotdl.game import GameConfig
-from pyriotdl.helper import encode_path, extract_id
+from PyRiotDL.game import GameConfig
+from PyRiotDL.helper import encode_path, extract_id
 
 log = logging.getLogger(__name__)
 

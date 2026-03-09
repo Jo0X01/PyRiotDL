@@ -23,9 +23,9 @@ from typing import Optional
 import requests
 import zstandard as zstd
 
-from pyriotdl.models import FilePlan, PlanChunk
-from pyriotdl.progress import BarStyle, DownloadProgress
-from pyriotdl.helper import fmt_size
+from PyRiotDL.models import FilePlan, PlanChunk
+from PyRiotDL.progress import BarStyle, DownloadProgress
+from PyRiotDL.helper import fmt_size
 
 log = logging.getLogger(__name__)
 

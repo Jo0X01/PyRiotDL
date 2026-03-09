@@ -8,7 +8,7 @@ import logging
 import time
 from dataclasses import dataclass
 
-from pyriotdl.helper import fmt_eta, fmt_size, fmt_speed
+from PyRiotDL.helper import fmt_eta, fmt_size, fmt_speed
 
 log = logging.getLogger(__name__)
 

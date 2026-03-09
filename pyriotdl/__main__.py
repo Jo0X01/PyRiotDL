@@ -1,7 +1,7 @@
 """
-pyriotdl — modern CLI
+PyRiotDL — modern CLI
 
-    python -m pyriotdl <command> [options]
+    python -m PyRiotDL <command> [options]
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ out = Console()
 err = Console(stderr=True)
 
 app = typer.Typer(
-    name="pyriotdl",
+    name="PyRiotDL",
     help="[bold cyan]PyRiotDL[/] — download and inspect Riot Games files",
     rich_markup_mode="rich",
     no_args_is_help=True,
@@ -52,7 +52,7 @@ def _setup_log(verbose: bool) -> None:
         )
 
 def _get_game(key: str):
-    from pyriotdl.config import RiotConfig
+    from PyRiotDL.config import RiotConfig
     cfg = RiotConfig.get(key)
     if cfg is None:
         all_keys = [k for g in RiotConfig.all() for k in g.key]
@@ -94,7 +94,7 @@ def _kv_grid(*rows: tuple[str, str]) -> Table:
 
 @app.command("games", help="List every supported game with its key aliases and regions.")
 def cmd_games() -> None:
-    from pyriotdl.config import RiotConfig
+    from PyRiotDL.config import RiotConfig
 
     t = Table(box=box.ROUNDED, highlight=True)
     t.add_column("Game",           style="bold cyan",   no_wrap=True)
@@ -140,7 +140,7 @@ def cmd_history(
     verbose:      VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl.history import RiotManifestHistory
+    from PyRiotDL.history import RiotManifestHistory
 
     cfg = _get_game(game)
     if region:
@@ -219,7 +219,7 @@ def cmd_check_update(
     verbose: VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl import PyRiotDL
+    from PyRiotDL import PyRiotDL
 
     try:
         dl = PyRiotDL(game, region=region)
@@ -256,7 +256,7 @@ def cmd_info(
     verbose:  VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl.decoder import ManifestDecoder
+    from PyRiotDL.decoder import ManifestDecoder
 
     with out.status("[cyan]Loading manifest …"):
         try:
@@ -296,7 +296,7 @@ def cmd_lang_sizes(
     verbose:  VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl import PyRiotDL
+    from PyRiotDL import PyRiotDL
 
     try:
         dl = PyRiotDL(game, region=region)
@@ -339,7 +339,7 @@ def cmd_build(
     verbose:  VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl.builder import ManifestBuilder
+    from PyRiotDL.builder import ManifestBuilder
 
     if not any([json_out, txt_out, urls_out]):
         err.print("[red]✗[/] Specify at least one output: [cyan]--json[/], [cyan]--txt[/], or [cyan]--urls[/]")
@@ -393,8 +393,8 @@ def cmd_diff(
     verbose: VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl.builder import ManifestBuilder
-    from pyriotdl.models import DiffResult
+    from PyRiotDL.builder import ManifestBuilder
+    from PyRiotDL.models import DiffResult
 
     resolved_cdn = cdn or (_get_game(game).cdn if game else None)
     languages    = _parse_langs(lang)
@@ -456,10 +456,10 @@ def cmd_download(
     verbose:       VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl import PyRiotDL
-    from pyriotdl.builder import ManifestBuilder
-    from pyriotdl.downloader import GameDownloader
-    from pyriotdl.helper import save_manifest_file
+    from PyRiotDL import PyRiotDL
+    from PyRiotDL.builder import ManifestBuilder
+    from PyRiotDL.downloader import GameDownloader
+    from PyRiotDL.helper import save_manifest_file
 
     try:
         dl = PyRiotDL(game, region=region, platform=platform)
@@ -515,9 +515,9 @@ def cmd_update(
     verbose: VerboseOpt = False,
 ) -> None:
     _setup_log(verbose)
-    from pyriotdl import PyRiotDL
-    from pyriotdl.builder import ManifestBuilder
-    from pyriotdl.downloader import GameDownloader
+    from PyRiotDL import PyRiotDL
+    from PyRiotDL.builder import ManifestBuilder
+    from PyRiotDL.downloader import GameDownloader
 
     languages = _parse_langs(lang)
 
@@ -567,7 +567,7 @@ def _run_rich_download(downloader, output_dir: str, workers: int, retries: int) 
     import requests
     import zstandard as zstd
 
-    from pyriotdl.models import FilePlan, PlanChunk
+    from PyRiotDL.models import FilePlan, PlanChunk
 
     work = downloader._to_download
     if not work:

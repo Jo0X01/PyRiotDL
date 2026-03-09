@@ -5,7 +5,7 @@ Riot Games metadata , all games, regions, and API endpoints.
 from __future__ import annotations
 import dataclasses
 from typing import Optional
-from pyriotdl.helper import deep_getter, fetch_data_from_url
+from PyRiotDL.helper import deep_getter, fetch_data_from_url
 
 @dataclasses.dataclass
 class GameConfig:

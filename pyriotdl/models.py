@@ -8,7 +8,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Optional
 
-from pyriotdl.helper import fmt_size
+from PyRiotDL.helper import fmt_size
 
 log = logging.getLogger(__name__)
 
