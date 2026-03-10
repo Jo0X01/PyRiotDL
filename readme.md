@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=D0021B&height=200&section=header&text=PyRiotDL&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Riot%20Games%20Files%20Downloader&descAlignY=60&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=D0021B&height=200&section=header&text=PyRiotDL&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
 <br/>
 
