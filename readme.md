@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=D0021B&height=200&section=header&text=PyRiotDL&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Riot%20Games%20manifest-based%20file%20downloader&descAlignY=60&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=D0021B&height=200&section=header&text=PyRiotDL&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Riot%20Games%20Files%20Downloader&descAlignY=60&descAlign=50" width="100%"/>
 
 <br/>
 
@@ -403,10 +403,13 @@ dl.dump(
 </details>
 
 ---
+## Related Projects
+- [Morilli/ManifestDownloader](https://github.com/Morilli/ManifestDownloader) — original C CLI tool
+- [moonshadow565/rman](https://github.com/moonshadow565/rman) — C++ toolkit
+- [ev3nvy/rman-rs](https://github.com/ev3nvy/rman-rs) — Rust implementation
+- [Morilli/riot-manifests](https://github.com/Morilli/riot-manifests) — community manifest archive (used by this project)
 
-## 🙏 Credits
 
-Version history powered by the community-maintained [**Morilli/riot-manifests**](https://github.com/Morilli/riot-manifests) archive.
 
 ---
 
