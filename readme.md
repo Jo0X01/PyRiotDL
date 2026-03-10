@@ -404,9 +404,11 @@ dl.dump(
 
 ---
 
-## 🙏 Credits
-
-Version history powered by the community-maintained [**Morilli/riot-manifests**](https://github.com/Morilli/riot-manifests) archive.
+## Related Projects
+- [Morilli/ManifestDownloader](https://github.com/Morilli/ManifestDownloader) — original C CLI tool
+- [moonshadow565/rman](https://github.com/moonshadow565/rman) — C++ toolkit
+- [ev3nvy/rman-rs](https://github.com/ev3nvy/rman-rs) — Rust implementation
+- [Morilli/riot-manifests](https://github.com/Morilli/riot-manifests) — community manifest archive (used by this project)
 
 ---
 
