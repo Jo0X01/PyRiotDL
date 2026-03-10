@@ -1,0 +1,12 @@
+# create .gitignore
+echo "__pycache__/
+*.pyc
+*.pyo
+.env
+dist/
+build/
+*.egg-info/
+.eggs/
+.idea/
+.vscode/
+*.log" > .gitignore
