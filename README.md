@@ -22,15 +22,15 @@
 
 ## 🎮 Supported Games
 
-| Game | Keys | CDN |
+| Game | Keys |
 |:---|:---|:---|
-| **League of Legends** | `lol` `league` | `lol.secure.dyn.riotcdn.net` |
-| **Teamfight Tactics** | `tft` | shares LoL CDN |
-| **VALORANT** | `val` `valorant` | `valorant.secure.dyn.riotcdn.net` |
-| **Legends of Runeterra** | `lor` `runeterra` `bacon` | `bacon.secure.dyn.riotcdn.net` |
-| **2XKO** | `2xko` `ko2` | `lion.secure.dyn.riotcdn.net` |
-| **Wild Rift** | `wildrift` `wr` | `wildrift.secure.dyn.riotcdn.net` |
-| **Riot Client** | `rc` `riotclient` | `ks-foundation.secure.dyn.riotcdn.net` |
+| **League of Legends** | `lol` `league` |
+| **Teamfight Tactics** | `tft` |
+| **VALORANT** | `val` `valorant` |
+| **Legends of Runeterra** | `lor` `runeterra` `bacon` |
+| **2XKO** | `2xko` `ko2` |
+| **Wild Rift** | `wildrift` `wr` |
+| **Riot Client** | `rc` `riotclient` |
 
 ---
 
