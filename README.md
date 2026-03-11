@@ -23,7 +23,7 @@
 ## 🎮 Supported Games
 
 | Game | Keys |
-|:---|:---|:---|
+|:---|:---|
 | **League of Legends** | `lol` `league` |
 | **Teamfight Tactics** | `tft` |
 | **VALORANT** | `val` `valorant` |
