@@ -4,12 +4,6 @@
 
 <br/>
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/License-GPLv3-D0021B?style=for-the-badge)](LICENSE)
-[![PyPI](https://img.shields.io/badge/PyPI-PyRiotDL-yellow?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/PyRiotDL)
-
-<br/>
-
 *A Python library & CLI for downloading, inspecting, and patching Riot Games files using RMAN manifests.*
 
 <br/>
